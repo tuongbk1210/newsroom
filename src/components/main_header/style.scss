@@ -1,0 +1,29 @@
+.main {
+    width: 80%;
+    margin: 0 auto;
+    // gap: 10px;
+}
+
+.container_btn {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 34px;
+    padding: 0px 10px;
+}
+
+.container_btn .antd_btn {
+    font-size: 4px;
+    line-height: 0.75;
+    height: 14px;
+    padding: 2px 7.5px;
+    border-radius: 3px;
+}
+
+.container_btn button {
+    bottom: 80px;
+}
+
+// .slick-slide {
+//     padding: 0 5px;
+// }
