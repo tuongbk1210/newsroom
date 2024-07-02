@@ -2,20 +2,6 @@ import  './style.scss';
 import ItemHeader from "./item_main_header";
 import DATA_HOME_MAIN from "../../constants/common"
 
-// export default function ItemMainHeader() {
-//   return (
-//     <>
-//         {
-//             // eslint-disable-next-line array-callback-return
-//             DATA_HOME_MAIN.map((item, key)=>{
-//                 <ItemHeader key={key} img={item.img} text={item.text} />
-//             })
-//         }
-//     </>
-//   );
-// }
-
-
 import React,  {useRef} from 'react';
 import { Carousel, Button, Image } from 'antd';
 // import 'antd/dist/reset.css';
@@ -33,7 +19,10 @@ export default function ItemMainHeader() {
 
     return (
       <div class="main">
-         <Button onClick={()=>prev()} class="prev"><i class="fa fa fa-angle-left"></i></Button>
+        <div class="container_btn">
+          <Button onClick={()=>prev()} style={{top: "15px", left: "10px"}}><i class="fa fa fa-angle-left"></i></Button>
+          <Button onClick={()=>next()} style={{top: "15px", left: "600px"}}><i class="fa fa-angle-right"></i></Button>
+        </div>
         <Carousel
           ref={carouselRef}
           slidesToShow={3}
@@ -42,14 +31,9 @@ export default function ItemMainHeader() {
           infinite={false}
         >
           {DATA_HOME_MAIN.map((item, key) => (
-            <ItemHeader key={key} img={item.img} text={item.text}/>
+            <ItemHeader key={key} img={item.img} text={item.text} />
           ))}
         </Carousel>
-        <Button onClick={()=>next()} class="next"><i class="fa fa-angle-right"></i></Button>
-        {/* <div class="container_btn">
-         
-         
-        </div> */}
       </div>
     );
 }

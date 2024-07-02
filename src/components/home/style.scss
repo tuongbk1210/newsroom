@@ -1,16 +1,57 @@
 .home {
-    padding: 30px 250px;
+    padding: 20px 220px;
 }
 
 .container-home {
-    display: flex;
-    flex-direction: row;
+    // display: flex;
+    // flex-direction: row;
+    // position: relative;
+    // padding-top: 20px !important;
 }
 
 .bg-home {
-    width: 100%*2/3;
+    position: absolute;
 }
 
+ button .ant-btn {
+    height: 0px !important;
+    border-radius: none !important;
+
+}
+
+.text-bg {
+    position: absolute;
+    color: white;
+    z-index: 99;
+    bottom: 75px;
+    padding-left: 30px !important;
+}
+
+.text-info {
+    font-weight: 700;
+    font-size: 20px;
+    max-width: 430px;
+}
+// .bg-home {
+//     width: 100%*2/3;
+// }
+
 .category {
-    width: 100%/3;
+   display: flex;
+   flex-direction: row;
+   padding-left: 10px;
+}
+
+.slick-slide .slick-list .slick-track {
+    display: flex;
+    gap: 20px;
+}
+
+.container-categories {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-categories {
+    font-weight: 700;
 }

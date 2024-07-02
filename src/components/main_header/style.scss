@@ -1,15 +1,11 @@
 .main {
-    width: 80%;
     margin: 0 auto;
-    // gap: 10px;
+    position: relative;
 }
 
 .container_btn {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    margin-top: 34px;
-    padding: 0px 10px;
+    position: absolute;
+    z-index: 99;
 }
 
 .container_btn .antd_btn {
@@ -20,10 +16,8 @@
     border-radius: 3px;
 }
 
-.container_btn button {
-    bottom: 80px;
-}
+.slick-slide .slick-list .slick-track {
+    display: flex;
+    gap: 20px;
 
-// .slick-slide {
-//     padding: 0 5px;
-// }
+}
