@@ -11,6 +11,12 @@ import Entertainment from "../assets/images/categories/entertainement.jpg";
 import Sport from "../assets/images/categories/sport.jpg";
 import Techonology from "../assets/images/categories/technology.jpg";
 
+import Featured_1 from "../assets/images/featured/featured_1.jpg";
+import Featured_2 from "../assets/images/featured/featured_2.jpg";
+import Featured_3 from "../assets/images/featured/featured_3.jpg";
+import Featured_4 from "../assets/images/featured/featured_4.jpg";
+import Featured_5 from "../assets/images/featured/featured_5.jpg";
+
 const DATA_HOME_MAIN = [
     {
         img: Home_main_header_1, text: "Lorem ipsum dolor sit amet consec adips elit"
@@ -52,3 +58,5 @@ export const DATA_CATEGORY = [
     img: Techonology, text: "Techonology"
 }
 ]
+
+

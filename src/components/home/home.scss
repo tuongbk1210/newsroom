@@ -38,8 +38,12 @@
 
 .category {
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    padding-left: 10px;
+}
+
+.category.ant-card-body {
+    border-radius: 0px;
 }
 
 .slick-slide .slick-list .slick-track {
@@ -50,8 +54,39 @@
 .container-categories {
     display: flex;
     justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
+    width: 100%;
 }
 
 .text-categories {
     font-weight: 700;
+}
+
+.card-category {
+  padding-top: 10px;
+  position: relative;
+//   max-height: 100px;
+}
+
+.img-category {
+    max-height: 77px;
+}
+
+.categories-text {
+    font-weight: 700;
+    position: absolute;
+    z-index: 99;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.container-featured {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px 10px 10px 10px;
 }
