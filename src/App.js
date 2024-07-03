@@ -7,6 +7,7 @@ import Category from "./components/category";
 import Home from "./components/home";
 import SingleNews from "./components/single-news";
 import Header from "./components/Header";
+import Footer from "./components/footer"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/category"  component={Category}/>
         <Route path="/single-news"  component={SingleNews}/>
       </Switch>
+      <Footer />
     </div>
   );
 }

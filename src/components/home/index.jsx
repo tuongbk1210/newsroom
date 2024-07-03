@@ -1,5 +1,5 @@
 import React, {useRef} from "react";
-import { Row, Col,  Carousel, Button,Card } from 'antd';
+import { Row, Col,  Carousel, Button } from 'antd';
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 import Slideshow from  "../../components/main_header/index";

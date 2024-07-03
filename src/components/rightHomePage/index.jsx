@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Row, Col,  Carousel,Card, Input,Button } from 'antd';
+import { Row, Input,Button } from 'antd';
 import { FaFacebookF,  FaVimeoV } from "react-icons/fa";
 import { BiLogoTwitter } from "react-icons/bi";
 import { LiaLinkedinIn } from "react-icons/lia";
@@ -10,7 +10,7 @@ import { RiYoutubeFill } from "react-icons/ri";
 
 import  './styles.scss';
 import Techonology from "../../assets/images/categories/technology.jpg";
-import { DATA_LATEST } from '../../constants/common';
+import { DATA_LATEST, DATA_TAGS} from '../../constants/common';
 import ItemPopular from '../popular';
 
 export const ItemIcon = ({ color, icon, children, text }) => {
@@ -37,10 +37,6 @@ export const ItemIcon = ({ color, icon, children, text }) => {
     icon: PropTypes.object,
     children: PropTypes.node.isRequired
   };
-
-const data_tags = ["Politics", "Business", "Corporate", "Sports", "Health", "Education" , "Science", "Techonology", "Foods", "Entertainment","Travel", "Lifestyle"]
-
-
 
 export default function RightHomePage() {
   return (
@@ -84,7 +80,7 @@ export default function RightHomePage() {
         </Row>
         <Row className="follow_us">Tags</Row>
         <Row className="container_tags">
-                {data_tags.map((item, key)=>{
+                {DATA_TAGS.map((item, key)=>{
                     return(
                         <div className="item_tag" key={key}>
                             {item}

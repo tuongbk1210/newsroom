@@ -149,3 +149,5 @@ export const DATA_LATEST = [
         img: Latest_4, text: "Lorem ipsum dolor sit amet consec adipis elit"
     }
 ]
+
+export const DATA_TAGS = ["Politics", "Business", "Corporate", "Sports", "Health", "Education" , "Science", "Techonology", "Foods", "Entertainment","Travel", "Lifestyle"]
