@@ -1,0 +1,25 @@
+.item-featured {
+    position: relative;
+    display: flex;
+    padding: 0px 10px !important;
+}
+.text_featured {
+    z-index: 99;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    color: #ffffff;
+    // width: 100%;
+    top: 160px
+}
+.text-date-featured {
+    font-size: 12px;
+}
+
+.text-featured {
+   font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    
+}

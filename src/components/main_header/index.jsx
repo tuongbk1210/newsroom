@@ -3,7 +3,7 @@ import ItemHeader from "./item_main_header";
 import DATA_HOME_MAIN from "../../constants/common"
 
 import React,  {useRef} from 'react';
-import { Carousel, Button, Image } from 'antd';
+import { Carousel, Button } from 'antd';
 // import 'antd/dist/reset.css';
 
 export default function ItemMainHeader() {

@@ -1,10 +1,14 @@
-import  './style.scss'
+import  './styles.scss'
 
-export default function ItemFeaturedHome({key, img, text}) {
+export default function ItemFeaturedHome({key, img, textDate, text}) {
   return (
-    <div class="item-main" key={key}>
-        <img src={img} alt="item header" width={"60px"} height={"60px"}/>
-        <div class="item-text"><p>{text}</p></div> 
+    <div className="item-featured" key={key}>
+        <img src={img} alt="item featured" width={"100%"} height={"250px"}/>
+        <div className='text_featured'>
+       
+          <div className="text-date-featured">{textDate}</div> 
+          <div className="text-featured"><p>{text}</p></div> 
+        </div>
     </div>
   );
 }

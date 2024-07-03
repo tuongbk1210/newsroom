@@ -17,6 +17,24 @@ import Featured_3 from "../assets/images/featured/featured_3.jpg";
 import Featured_4 from "../assets/images/featured/featured_4.jpg";
 import Featured_5 from "../assets/images/featured/featured_5.jpg";
 
+import Category_Business_1 from "../assets/images/double_categories/category_business_1.jpg";
+import Category_Business_2 from "../assets/images/double_categories/category_business_2.jpg";
+import Category_Business_3 from "../assets/images/double_categories/category_business_3.jpg";
+import Category_Technology_1 from "../assets/images/double_categories/category_techonology_1.jpg";
+import Category_Technology_2 from "../assets/images/double_categories/category_techonology_2.jpg";
+import Category_Technology_3 from "../assets/images/double_categories/category_techonology_3.jpg";
+import Category_Sport_1 from "../assets/images/double_categories/category_sport_1.jpg";
+import Category_Sport_2 from "../assets/images/double_categories/category_sport_2.jpg";
+import Category_Sport_3 from "../assets/images/double_categories/category_sport_3.jpg";
+import Category_Entertainment_1 from "../assets/images/double_categories/category_entertainment_1.png";
+import Category_Entertainment_2 from "../assets/images/double_categories/category_entertainment_2.png";
+import Category_Entertainment_3 from "../assets/images/double_categories/category_entertainment_3.jpg";
+
+import Popular_1 from "../assets/images/popular/popular_1.jpg";
+import Popular_2 from "../assets/images/popular/popular_2.jpg";
+import Popular_3 from "../assets/images/popular/popular_3.jpg";
+import Popular_4 from "../assets/images/popular/popular_4.jpg";
+
 const DATA_HOME_MAIN = [
     {
         img: Home_main_header_1, text: "Lorem ipsum dolor sit amet consec adips elit"
@@ -59,4 +77,54 @@ export const DATA_CATEGORY = [
 }
 ]
 
+export const DATA_FEATURED = [
+    {
+        img: Featured_1, text_date: "Techonology / January 01,2045", text: "Sanctus amet sed Ipsum lorem"
+    },
+    {
+        img: Featured_2, text_date: "Techonology / January 01,2045", text: "Sanctus amet sed Ipsum lorem"
+    },
+    {
+        img: Featured_3, text_date: "Techonology / January 01,2045", text: "Sanctus amet sed Ipsum lorem"
+    },
+    {
+        img: Featured_4, text_date: "Techonology / January 01,2045", text: "Sanctus amet sed Ipsum lorem"
+    },
+    {
+        img: Featured_5, text_date: "Techonology / January 01,2045", text: "Sanctus amet sed Ipsum lorem"
+    }
+]
 
+export const DATA_DOUBLE_CATEGORIES  = [
+    {
+        img: [Category_Business_1, Category_Business_2, Category_Business_3], title: "Business",
+        text: "Sanctus amet sed ipsum lorem"
+    },
+    {
+        img: [Category_Technology_1, Category_Technology_2, Category_Technology_3], title: "Technology",
+        text: "Sanctus amet sed ipsum lorem"
+    },
+    {
+        img: [Category_Entertainment_1, Category_Entertainment_2, Category_Entertainment_3], title: "Entertainment",
+        text: "Sanctus amet sed ipsum lorem"
+    },
+    {
+        img: [Category_Sport_1, Category_Sport_2, Category_Sport_3], title: "Sport",
+        text: "Sanctus amet sed ipsum lorem"
+    },
+]
+
+export const DATA_POPULAR = [
+    {
+        img: Popular_1, text: "Lorem ipsum dolor sit amet consec adipis elit"
+    },
+    {
+        img: Popular_2, text: "Lorem ipsum dolor sit amet consec adipis elit"
+    },
+    {
+        img: Popular_3, text: "Lorem ipsum dolor sit amet consec adipis elit"
+    },
+    {
+        img: Popular_4, text: "Lorem ipsum dolor sit amet consec adipis elit"
+    }
+]
