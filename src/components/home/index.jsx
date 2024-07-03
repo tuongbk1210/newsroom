@@ -5,8 +5,10 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import Slideshow from  "../../components/main_header/index";
 import FeauturedHome from "../../components/featured_home/index";
 import DoubleCategories from "../../components/double_categories/index";
+import ItemPopular from "../../components/popular/index";
+import RightHomePage from "../../components/rightHomePage/index";
 import "./home.scss";
-import { DATA_BACKGROUND, DATA_CATEGORY, DATA_DOUBLE_CATEGORIES } from "../../constants/common";
+import { DATA_BACKGROUND, DATA_CATEGORY, DATA_DOUBLE_CATEGORIES, DATA_POPULAR, DATA_LATEST } from "../../constants/common";
 import Popular_1 from "../../assets/images/background_home/thao-luan-nhom.jpg";
 import Popular_2 from "../../assets/images/background_home/thao_luan_nhom_2.jpg";
 
@@ -92,7 +94,7 @@ function Home() {
                 <div className="text_popular">Popular</div>
                 <Link>View All</Link>
             </Row>
-            <Row xs={16} xl={16}>
+            <Row xs={16} xl={16} style={{padding: "0px 10px"}}>
               <Row className="item_popular_left">
                   <img src={Popular_1} alt="popular 1" width={"100%"} height={"300px"} />
                   <div className="container_popular_text">
@@ -114,9 +116,55 @@ function Home() {
                       </div>
               </Row>
             </Row>
+           <Row className="container_item_popular" xs={16} lg={16}>
+                {
+                  DATA_POPULAR.map((item, key)=> {
+                    return(
+                      <ItemPopular img={item.img} text={item.text} key={key} />
+                    )
+                  })
+                }
+           </Row>
+
+           <Row className="popular">
+                <div className="text_popular">Latest</div>
+                <Link>View All</Link>
+            </Row>
+            <Row xs={16} xl={16} style={{padding: "0px 10px"}}>
+              <Row className="item_popular_left">
+                  <img src={Popular_2} alt="popular 1" width={"100%"} height={"300px"} />
+                  <div className="container_popular_text">
+                    <div><span style={{color: "red"}}>Technology</span>/ January 01,2045</div>
+                    <div className="text_popular_sub">Est set amet ipsum stet clita rebum duo</div>
+                    <div>Rebum dolore duo et vẻo ipsum cilta, est ea sed duo diam ipsum, clita at justo, lorem amet
+                      vero éo sed sit...
+                    </div>
+                  </div>
+              </Row>
+              <Row className="item_popular_right">
+                  <img src={Popular_1} alt="popular 1" width={"100%"} height={"300px"} />
+                      <div className="container_popular_text">
+                        <div><span style={{color: "red"}}>Technology</span>/ January 01,2045</div>
+                        <div className="text_popular_sub">Est set amet ipsum stet clita rebum duo</div>
+                        <div>Rebum dolore duo et vero ipsum cilta, est ea sed duo diam ipsum, clita at justo, lorem amet
+                          vero eos sed sit...
+                        </div>
+                      </div>
+              </Row>
+            </Row>
+           <Row className="container_item_popular" xs={16} lg={16}>
+                {
+                  DATA_LATEST.map((item, key)=> {
+                    return(
+                      <ItemPopular img={item.img} text={item.text} key={key} />
+                    )
+                  })
+                }
+           </Row>
+
           </Col>
           <Col xs={8} lg={8} className="container_popular">
-            <Row className="follow_us">Follow Us</Row>
+            <RightHomePage />
           </Col>
       </Row>
     </div>

@@ -35,6 +35,12 @@ import Popular_2 from "../assets/images/popular/popular_2.jpg";
 import Popular_3 from "../assets/images/popular/popular_3.jpg";
 import Popular_4 from "../assets/images/popular/popular_4.jpg";
 
+
+import Latest_1 from "../assets/images/latest/latest_1.jpg";
+import Latest_2 from "../assets/images/latest/latest_2.jpg";
+import Latest_3 from "../assets/images/latest/latest_3.jpg";
+import Latest_4 from "../assets/images/latest/latest_4.jpg";
+
 const DATA_HOME_MAIN = [
     {
         img: Home_main_header_1, text: "Lorem ipsum dolor sit amet consec adips elit"
@@ -126,5 +132,20 @@ export const DATA_POPULAR = [
     },
     {
         img: Popular_4, text: "Lorem ipsum dolor sit amet consec adipis elit"
+    }
+]
+
+export const DATA_LATEST = [
+    {
+        img: Latest_1, text: "Lorem ipsum dolor sit amet consec adipis elit"
+    },
+    {
+        img: Latest_2, text: "Lorem ipsum dolor sit amet consec adipis elit"
+    },
+    {
+        img:Latest_3, text: "Lorem ipsum dolor sit amet consec adipis elit"
+    },
+    {
+        img: Latest_4, text: "Lorem ipsum dolor sit amet consec adipis elit"
     }
 ]

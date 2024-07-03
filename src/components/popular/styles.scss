@@ -1,15 +1,29 @@
 .item_popular_small {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    padding: 0px 10px 10px 10px;
+}
 
+.item_popular_right_page {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0px 10px 10px 10px;
 }
 
 .container_text_popular_item {
-
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
 }
 
 .text_title_popular {
-    
+    font-size: 15px;
 }
 
 .text_content_popular {
-    
+font-size: 20px;
+font-weight: 700;
 }
