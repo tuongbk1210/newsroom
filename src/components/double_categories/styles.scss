@@ -22,7 +22,14 @@
 .container_double_categories_btn {
     display: flex;
     gap: 10px
-  
+}
+
+.container_double_categories_btn button {
+    color: #DEE2E6;
+    background-color: unset;
+    border: 1px solid #DEE2E6;
+    padding: 8px;
+    height: 27px;
 }
 
 .container_double_categories_text {
