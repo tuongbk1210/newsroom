@@ -41,7 +41,7 @@ import Latest_2 from "../assets/images/latest/latest_2.jpg";
 import Latest_3 from "../assets/images/latest/latest_3.jpg";
 import Latest_4 from "../assets/images/latest/latest_4.jpg";
 
-const DATA_HOME_MAIN = [
+export const DATA_HOME_MAIN = [
     {
         img: Home_main_header_1, text: "Lorem ipsum dolor sit amet consec adips elit"
     },
@@ -56,9 +56,6 @@ const DATA_HOME_MAIN = [
     }
 
 ]
-
-export default DATA_HOME_MAIN
-
 
 export const DATA_BACKGROUND = [
 {
@@ -151,3 +148,62 @@ export const DATA_LATEST = [
 ]
 
 export const DATA_TAGS = ["Politics", "Business", "Corporate", "Sports", "Health", "Education" , "Science", "Techonology", "Foods", "Entertainment","Travel", "Lifestyle"]
+
+export const DATA_PAGINATION = [
+    {img: Category_Business_1},
+    {img: Category_Business_2},
+    {img: Category_Business_3},
+    {img: Category_Technology_1},
+    {img: Category_Technology_2},
+    {img: Category_Technology_3},
+    {img: Category_Sport_1},
+    {img: Category_Sport_2},
+    {img: Category_Sport_3},
+    {img: Category_Entertainment_3},
+    {img: Category_Entertainment_3},
+    {img: Category_Entertainment_3},
+    {img: Featured_1},
+    {img: Featured_2},
+    {img: Featured_3},
+    {img: Featured_4},
+    {img: Featured_5},
+    {img: Latest_1},
+    {img: Latest_2},
+    {img: Latest_3},
+    {img: Latest_4},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},  
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},  
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2},
+    {img: Category_Technology_2}
+]

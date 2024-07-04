@@ -25,11 +25,11 @@ function Home() {
   };
 
   return (
-    <div class="home">
+    <div className="home">
       <Slideshow />
-      <Row class="container-home" xs={24} lg={24} style={{padding: "20px 10px 0px 10px"}} >
-          <Col class="bg-home" xs={16} lg={16}>
-            <div class="container_bg_btn">
+      <Row className="container-home" xs={24} lg={24} style={{padding: "20px 10px 0px 10px"}} >
+          <Col xs={16} lg={16}>
+            <div className="container_bg_btn">
               <Button onClick={()=>prev()}><i class="fa fa fa-angle-left"></i></Button>
               <Button onClick={()=>next()}><i class="fa fa-angle-right"></i></Button>
             </div>
@@ -45,9 +45,9 @@ function Home() {
           {DATA_BACKGROUND.map((item, key) => (
                 <Row style={{position: 'relative'}}>
                   <img src={item.img} alt="background_home" width={"100%"} height={'405px'}/>
-                  <div class="text-bg">
-                    <div class="text-date">Technology / January 01/2045</div>
-                    <div class="text-info">{item.text}</div>
+                  <div className="text-bg">
+                    <div className="text-date">Technology / January 01/2045</div>
+                    <div className="text-info">{item.text}</div>
                   </div>
                 </Row>
           ))}

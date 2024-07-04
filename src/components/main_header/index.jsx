@@ -1,11 +1,11 @@
-import  './style.scss';
-import ItemHeader from "./item_main_header";
-import DATA_HOME_MAIN from "../../constants/common"
-
 import React,  {useRef} from 'react';
 import { Carousel, Button } from 'antd';
-// import 'antd/dist/reset.css';
 
+import  './style.scss';
+import ItemHeader from "./item_main_header";
+import { DATA_HOME_MAIN } from "../../constants/common";
+
+// import 'antd/dist/reset.css';
 export default function ItemMainHeader() {
   const carouselRef = useRef();
 

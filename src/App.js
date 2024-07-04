@@ -3,7 +3,7 @@ import { Redirect, Route, Switch } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 import './App.css';
-import Category from "./components/category";
+import Category from "./components/categories";
 import Home from "./components/home";
 import SingleNews from "./components/single-news";
 import Header from "./components/Header";
