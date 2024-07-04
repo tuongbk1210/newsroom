@@ -17,7 +17,7 @@ export const ItemIcon = ({ color, icon, children, text }) => {
     const itemStyle = {
         backgroundColor: color,
         color: '#ffffff',
-        fontSize: '16px',
+        fontSize: '14px',
         width: "50%",
         alignItem: "center",
         marginBottom: "10px",
@@ -45,7 +45,7 @@ export default function RightHomePage() {
         <Row style={{paddingBottom: "20px"}}>
             <div className='item_icons'>
                 <ItemIcon color="#39569E" icon={<FaFacebookF />} text={"12,345 Fans"} />
-                <ItemIcon color="#52AAF4" icon={<BiLogoTwitter />} text={"12,345 Followẻs"}/>
+                <ItemIcon color="#52AAF4" icon={<BiLogoTwitter />} text={"12,345 Followers"}/>
             </div>
             <div className='item_icons'>
                 <ItemIcon color="#0285AD" icon={<LiaLinkedinIn/>} text={"12,345 Connects"}/>

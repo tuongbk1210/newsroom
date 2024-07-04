@@ -1,9 +1,13 @@
 .item-main {
     display: flex;
+    flex-direction: row;
     padding: 0px 10px;
+    width: 100%;
 }
 
 .item-text {
     height: 60px;
     background-color: #fff;
+    padding: 10px;
+    width: 100%;
 }

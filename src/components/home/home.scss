@@ -9,6 +9,16 @@
     // padding-top: 20px !important;
 }
 
+.container_bg_btn {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 185px;
+    padding: 0 20px;
+}
+
 .bg-home {
     position: absolute;
 }
@@ -71,6 +81,7 @@
 
 .img-category {
     max-height: 77px;
+    object-fit: cover;
 }
 
 .categories-text {
@@ -111,7 +122,7 @@
 .container_popular_text {
     padding: 20px;
     background-color: #fff;
-    font-size: 20px;
+    font-size: 17x;
 }
 
 .item_popular_left {
@@ -128,7 +139,7 @@
 
 .text_popular_sub {
     font-weight: 700;
-    font-size: 34px !important;
+    font-size: 25px !important;
     line-height: 0.9;
     padding: 10px 0px;
 }

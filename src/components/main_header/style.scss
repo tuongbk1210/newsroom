@@ -6,6 +6,11 @@
 .container_btn {
     position: absolute;
     z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 14px;
+    padding: 0 20px;
 }
 
 .container_btn .antd_btn {

@@ -20,8 +20,8 @@ export default function ItemMainHeader() {
     return (
       <div class="main">
         <div class="container_btn">
-          <Button onClick={()=>prev()} style={{top: "15px", left: "10px"}}><i class="fa fa fa-angle-left"></i></Button>
-          <Button onClick={()=>next()} style={{top: "15px", left: "600px"}}><i class="fa fa-angle-right"></i></Button>
+          <Button onClick={()=>prev()}><i class="fa fa fa-angle-left"></i></Button>
+          <Button onClick={()=>next()}><i class="fa fa-angle-right"></i></Button>
         </div>
         <Carousel
           ref={carouselRef}

@@ -3,7 +3,7 @@ import { DATA_FEATURED } from "../../constants/common"
 import ItemFeatured from "./item_featured_home/index"
 
 import React,  {useRef} from 'react';
-import { Carousel, Button } from 'antd';
+import { Carousel, Button, Row } from 'antd';
 import 'antd/dist/reset.css';
 
 export default function FeauturedHome() {
@@ -18,10 +18,10 @@ export default function FeauturedHome() {
   };
 
     return (
-      <div className="main_featured">
+      <Row className="main_featured" xs={24} lg={24} >
         <div className="container_featured_btn">
-          <Button onClick={()=>prev()} style={{ left: "30px"}}><i class="fa fa fa-angle-left"></i></Button>
-          <Button onClick={()=>next()} style={{ left: "800px"}}><i class="fa fa-angle-right"></i></Button>
+          <Button onClick={()=>prev()}><i class="fa fa fa-angle-left"></i></Button>
+          <Button onClick={()=>next()}><i class="fa fa-angle-right"></i></Button>
         </div>
         <Carousel
           ref={carouselRef}
@@ -31,11 +31,10 @@ export default function FeauturedHome() {
           infinite={false}
         >
           {DATA_FEATURED.map((item, key) => (
-            // console.log("item: ", item)
              <ItemFeatured key={key} img={item.img} text={item.text} textDate={item.text_date}/>
           ))}
         </Carousel>
-      </div>
+      </Row>
     );
 }
 

@@ -38,7 +38,7 @@ export default function DoubleCategories({img, title, text}) {
             img.map((item, key)=>{
               return(
                 <Row key={key} className="item_categories_double">
-                    <img src={item} alt="item category" width={"100%"} height="250px"/>
+                    <img src={item} alt="item category" width={"100%"} height="150px"/>
                     <div className="container_double_categories_text">
                         <div className="text_small_double_categories"><span className="title_double">{title}</span> / January 01,2045</div>
                         <div className="text_sub_double_categories">{text}</div>

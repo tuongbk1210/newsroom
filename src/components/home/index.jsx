@@ -29,11 +29,9 @@ function Home() {
       <Slideshow />
       <Row class="container-home" xs={24} lg={24} style={{padding: "20px 10px 0px 10px"}} >
           <Col class="bg-home" xs={16} lg={16}>
-            <div class="container_btn">
-              <Button onClick={()=>prev()} class="prev" style={{ top: "130px",
-              left: "10px", zIndex: 99 }}><i class="fa fa fa-angle-left"></i></Button>
-              <Button onClick={()=>next()} style={{ top: "130px",
-              left: "355px", zIndex: 99 }}><i class="fa fa-angle-right"></i></Button>
+            <div class="container_bg_btn">
+              <Button onClick={()=>prev()}><i class="fa fa fa-angle-left"></i></Button>
+              <Button onClick={()=>next()}><i class="fa fa-angle-right"></i></Button>
             </div>
        
         <Carousel
@@ -96,7 +94,7 @@ function Home() {
             </Row>
             <Row xs={16} xl={16} style={{padding: "0px 10px"}}>
               <Row className="item_popular_left">
-                  <img src={Popular_1} alt="popular 1" width={"100%"} height={"300px"} />
+                  <img src={Popular_1} alt="popular 1" width={"100%"} height={"200px"} />
                   <div className="container_popular_text">
                     <div><span style={{color: "red"}}>Technology</span>/ January 01,2045</div>
                     <div className="text_popular_sub">Est set amet ipsum stet clita rebum duo</div>
@@ -106,7 +104,7 @@ function Home() {
                   </div>
               </Row>
               <Row className="item_popular_right">
-                  <img src={Popular_2} alt="popular 1" width={"100%"} height={"300px"} />
+                  <img src={Popular_2} alt="popular 1" width={"100%"} height={"200px"} />
                       <div className="container_popular_text">
                         <div><span style={{color: "red"}}>Technology</span>/ January 01,2045</div>
                         <div className="text_popular_sub">Est set amet ipsum stet clita rebum duo</div>
@@ -132,7 +130,7 @@ function Home() {
             </Row>
             <Row xs={16} xl={16} style={{padding: "0px 10px"}}>
               <Row className="item_popular_left">
-                  <img src={Popular_2} alt="popular 1" width={"100%"} height={"300px"} />
+                  <img src={Popular_2} alt="popular 1" width={"100%"} height={"200px"} />
                   <div className="container_popular_text">
                     <div><span style={{color: "red"}}>Technology</span>/ January 01,2045</div>
                     <div className="text_popular_sub">Est set amet ipsum stet clita rebum duo</div>
@@ -142,7 +140,7 @@ function Home() {
                   </div>
               </Row>
               <Row className="item_popular_right">
-                  <img src={Popular_1} alt="popular 1" width={"100%"} height={"300px"} />
+                  <img src={Popular_1} alt="popular 1" width={"100%"} height={"200px"} />
                       <div className="container_popular_text">
                         <div><span style={{color: "red"}}>Technology</span>/ January 01,2045</div>
                         <div className="text_popular_sub">Est set amet ipsum stet clita rebum duo</div>
