@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { Row, Col, List , Pagination } from 'antd';
+import { Row, Col, Pagination } from 'antd';
 import { Link } from 'react-router-dom';
 
 import "./categories.scss"

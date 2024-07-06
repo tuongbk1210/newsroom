@@ -1,0 +1,74 @@
+.singnews {
+    padding: 0px 10px;
+    // background-color: #fff;
+    // margin: 0px 10px;
+}
+
+.link_title_singnews {
+    padding: 20px 0px;
+}
+
+.text_single_news_1 {
+    padding: 20px 0px 0px 0px;
+    font-size: 15px;
+    width: 100%;
+}
+
+.container_singnews {
+    background-color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bg_singnews {
+    float: left;
+    padding-right: 15px;
+    padding-bottom: 15px; 
+}
+
+.bg_singnews_2 {
+    float: right;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.comments {
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.container_comments {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content_comments {
+    display: flex;
+    padding-top: 20px;
+}
+
+.leave_comment {
+    background-color: #fff;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.container_leave_comment {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.btn_leave_comment {
+    background-color: red;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.ant-form-item-control-input-content button:hover {
+    background-color: red !important;
+    color: #fff !important;
+    border: none
+}
