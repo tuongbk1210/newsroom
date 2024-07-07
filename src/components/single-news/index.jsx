@@ -20,7 +20,7 @@ function SingleNews() {
           <Link className="link_current">Home</Link>&nbsp; /&nbsp; <Link className="link_current">Category</Link>&nbsp; /&nbsp; <Link className="link_current">Technology</Link>&nbsp;/&nbsp;News Title
       </Row>
         <Row xl={24} xs={24}>
-        <Col xs={16} lg={16} className="singnews">
+        <Col xs={24} sm={16} className="singnews">
         <img src={background_single_news} alt="background_single_news" width={"100%"} height={"440px"}/>
         <Row className="container_singnews"> 
         <Row className="link_title_singnews"><Link style={{color: 'red'}}>Technology</Link>&nbsp;/ January 01,2045</Row>
@@ -153,7 +153,7 @@ function SingleNews() {
         </Row>
         </Col> 
         </Col>
-        <Col xs={8} lg={8}>
+        <Col xs={24} sm={8}>
           <RightHomePage />
         </Col>
    
