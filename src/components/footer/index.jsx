@@ -83,7 +83,7 @@ export default function Footer() {
         </Col>
       </Row>
       <Row className="main_footer" xs={24} sm={24}>
-        &copy;&nbsp;<span style={{ color: 'red' }}>Your Site Name</span>. All Rights Reserved. Designed by
+        &copy;&nbsp;<span style={{ color: 'red' }}>Your Site Name</span>. All Rights Reserved. Designed by{' '}
         <span style={{ color: 'red' }}>&nbsp;HTML Codex</span>
       </Row>
     </>

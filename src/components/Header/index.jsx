@@ -1,10 +1,12 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
+/* eslint-disable no-script-url */
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { IoMenuOutline } from 'react-icons/io5';
 import { Button } from 'antd';
 import { useDispatch } from 'react-redux';
-import { setCategory } from '../../features/Category/categorySlice';
 
+import { setCategory } from '../../features/Category/categorySlice';
 import './style.scss';
 
 export default function Header() {
@@ -15,6 +17,11 @@ export default function Header() {
 
   const handleOpenMenu = () => {
     setIsOpenMenu(!isOpenMenu);
+  };
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    // Add your click handling logic here
   };
 
   return (
@@ -45,11 +52,11 @@ export default function Header() {
           <li className={current === '/single-news' ? 'current_pathname' : ''}>
             <Link to="single-news">Single News</Link>
           </li>
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">
+          <li className="dropdown">
+            <a href="/" onClick={() => handleClick()} className="dropbtn">
               Dropdown
             </a>
-            <div class="dropdown-content">
+            <div className="dropdown-content">
               <Link to="/category" onClick={() => dispatch(setCategory('Business'))}>
                 Business
               </Link>
@@ -68,21 +75,21 @@ export default function Header() {
             <a href="#contact">Contact</a>
           </li>
           <li className="isMobile">
-            <div class="search-container">
+            <div className="search-container">
               <form action="/action_page.php">
                 <input type="text" placeholder="keyword" name="keyword" />
                 <button type="submit">
-                  <i class="fa fa-search"></i>
+                  <i className="fa fa-search"></i>
                 </button>
               </form>
             </div>
           </li>
         </div>
-        <div class="isNotMobile">
+        <div className="isNotMobile">
           <form action="/action_page.php">
             <input type="text" placeholder="keyword" name="keyword" />
             <button type="submit">
-              <i class="fa fa-search"></i>
+              <i className="fa fa-search"></i>
             </button>
           </form>
         </div>

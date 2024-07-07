@@ -1,23 +1,22 @@
 .main_featured {
-    position: relative;
+  position: relative;
 }
 
-.container_featured_btn
-{
-    display: flex;
-    flex-direction: row;
-    z-index: 99;
-    justify-content: space-between;
-    width: 100%;
-    position: absolute;
-    top: 130px !important;
-    padding: 0px 20px;
+.container_featured_btn {
+  display: flex;
+  flex-direction: row;
+  z-index: 99;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 130px !important;
+  padding: 0px 20px;
 }
 
 .container_featured_btn button {
-    color: #DEE2E6;
-    background-color: unset;
-    border: 1px solid #DEE2E6;
-    padding: 8px;
-    height: 27px;
+  color: #dee2e6;
+  background-color: unset;
+  border: 1px solid #dee2e6;
+  padding: 8px;
+  height: 27px;
 }

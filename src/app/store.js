@@ -1,13 +1,13 @@
-import { configureStore} from '@reduxjs/toolkit';
+import { configureStore } from '@reduxjs/toolkit';
 
 import categoryReducer from '../features/Category/categorySlice';
 
 const rootReducer = {
-category: categoryReducer
+  category: categoryReducer,
 };
 
 const store = configureStore({
-    reducer: rootReducer
+  reducer: rootReducer,
 });
 
 export default store;

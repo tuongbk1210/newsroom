@@ -1,57 +1,56 @@
 .link_current {
-    color: red;
-    font-weight: 500;
-    padding-left: 10px;
-    padding-bottom: 20px;
+  color: red;
+  font-weight: 500;
+  padding-left: 10px;
+  padding-bottom: 20px;
 }
 
- .container_pagination{
-    padding-top: 20px;
-    width: 100%;
- }
+.container_pagination {
+  padding-top: 20px;
+  width: 100%;
+}
 
- .pagination {
-    margin: auto;
-    text-align: center;
- }
+.pagination {
+  margin: auto;
+  text-align: center;
+}
 
- .ant-pagination .ant-pagination-item-active {
-    background-color: red;
-    border: unset;
-    border-radius: unset;
+.ant-pagination .ant-pagination-item-active {
+  background-color: red;
+  border: unset;
+  border-radius: unset;
 }
 
 .ant-pagination .ant-pagination-item-active a {
-    color: #fff !important;
+  color: #fff !important;
 }
 
 .ant-pagination .ant-pagination-prev button {
-    color: red;
+  color: red;
 }
 
 .ant-pagination .ant-pagination-item a {
-    color: red;
+  color: red;
 }
 
-.ant-pagination .ant-pagination-item a:hover{
-    color: #fff;
+.ant-pagination .ant-pagination-item a:hover {
+  color: #fff;
 }
 
 .ant-pagination .ant-pagination-next button {
-    color: red;
+  color: red;
 }
 
 @media only screen and (max-width: 600px) {
-    .item_page_categories {
-        width: 100%;
-        padding: 10px 10px 0px 10px;
-    }
+  .item_page_categories {
+    width: 100%;
+    padding: 10px 10px 0px 10px;
+  }
 }
 
-
 @media only screen and (min-width: 601px) {
-    .item_page_categories {
-        width: 50%;
-        padding: 10px 10px 0px 10px;
-    }
+  .item_page_categories {
+    width: 50%;
+    padding: 10px 10px 0px 10px;
+  }
 }

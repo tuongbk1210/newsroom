@@ -39,10 +39,10 @@ function Home() {
         <Col xs={24} sm={16}>
           <div className="container_bg_btn">
             <Button onClick={() => prev()}>
-              <i class="fa fa fa-angle-left"></i>
+              <i className="fa fa fa-angle-left"></i>
             </Button>
             <Button onClick={() => next()}>
-              <i class="fa fa-angle-right"></i>
+              <i className="fa fa-angle-right"></i>
             </Button>
           </div>
 
@@ -52,10 +52,10 @@ function Home() {
             slidesToScroll={1}
             dots={false}
             infinite={false}
-            style={isMobile ? {paddingBottom: "10px"} : { paddingRight: '10px' }}
+            style={isMobile ? { paddingBottom: '10px' } : { paddingRight: '10px' }}
           >
             {DATA_BACKGROUND.map((item, key) => (
-              <Row style={{ position: 'relative' }}>
+              <Row style={{ position: 'relative' }} key={item.id}>
                 <img src={item.img} alt="background_home" width={'100%'} height={'405px'} />
                 <div className="text-bg">
                   <div className="text-date">Technology / January 01/2045</div>
@@ -65,7 +65,14 @@ function Home() {
             ))}
           </Carousel>
         </Col>
-        <Col className="category" xs={24} sm={8} style={ isMobile ? {borderRadius: '0px !important'} : { paddingLeft: '10px', borderRadius: '0px !important' }}>
+        <Col
+          className="category"
+          xs={24}
+          sm={8}
+          style={
+            isMobile ? { borderRadius: '0px !important' } : { paddingLeft: '10px', borderRadius: '0px !important' }
+          }
+        >
           <Row>
             <Row className="container-categories">
               <div className="text-categories">Categories</div>
@@ -74,7 +81,7 @@ function Home() {
           </Row>
           {DATA_CATEGORY.map((item, key) => {
             return (
-              <Col key={key} className="card-category">
+              <Col key={item.id} className="card-category">
                 <img className="img-category" src={item.img} width={'100%'} height={'100%'} alt="image-categories" />
                 <div className="categories-text">{item.text}</div>
               </Col>
@@ -90,9 +97,9 @@ function Home() {
       <Row>
         {DATA_DOUBLE_CATEGORIES.map((item, key) => {
           return (
-            <Row style={{ width: isMobile ? '100%': '50%', paddingTop: '20px' }}>
+            <Row style={{ width: isMobile ? '100%' : '50%', paddingTop: '20px' }}>
               <DoubleCategories
-                key={key}
+                key={item.id}
                 img={item.img}
                 title={item.title}
                 text={item.text}
@@ -138,7 +145,7 @@ function Home() {
           </Row>
           <Row className="container_item_popular" xs={24} sm={16}>
             {DATA_POPULAR.map((item, key) => {
-              return <ItemPopular img={item.img} text={item.text} key={key} />;
+              return <ItemPopular img={item.img} text={item.text} key={item.id} />;
             })}
           </Row>
 
@@ -176,7 +183,7 @@ function Home() {
           </Row>
           <Row className="container_item_popular" xs={16} lg={16}>
             {DATA_LATEST.map((item, key) => {
-              return <ItemPopular img={item.img} text={item.text} key={key} />;
+              return <ItemPopular img={item.img} text={item.text} key={item.id} />;
             })}
           </Row>
         </Col>

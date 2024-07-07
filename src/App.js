@@ -2,7 +2,6 @@ import React from "react";
 import { Redirect, Route, Switch } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-import './App.css';
 import Category from "./components/categories";
 import Home from "./components/home";
 import SingleNews from "./components/single-news";

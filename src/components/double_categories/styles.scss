@@ -1,63 +1,62 @@
 .main_double_categories {
- display: flex;
- flex-direction: column;
- width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .container_double_categories {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
-    margin: 0px 10px 0px 10px;
-    background-color: #fff;
-    position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 0px 10px 0px 10px;
+  background-color: #fff;
+  position: relative;
 }
 
 .title_double_categories {
-    font-weight: 700;
-    font-size: 20px;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .container_double_categories_btn {
-    display: flex;
-    gap: 10px
+  display: flex;
+  gap: 10px;
 }
 
 .container_double_categories_btn button {
-    color: #DEE2E6;
-    background-color: unset;
-    border: 1px solid #DEE2E6;
-    padding: 8px;
-    height: 27px;
+  color: #dee2e6;
+  background-color: unset;
+  border: 1px solid #dee2e6;
+  padding: 8px;
+  height: 27px;
 }
 
 .container_double_categories_text {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #fff;
 }
 
 .item_categories_double {
-    width: 100% !important;
-    padding: 10px 10px 0px 10px;
-
+  width: 100% !important;
+  padding: 10px 10px 0px 10px;
 }
 
 .ant-carousel {
-    width: 100% !important;
+  width: 100% !important;
 }
 
 .text_small_double_categories {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 .title_double {
- color: red;
+  color: red;
 }
 
-.text_sub_double_categories{
-    font-size: 18px;
-    font-weight: 700;
+.text_sub_double_categories {
+  font-size: 18px;
+  font-weight: 700;
 }

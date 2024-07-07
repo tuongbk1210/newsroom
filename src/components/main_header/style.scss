@@ -1,36 +1,35 @@
 .main {
-    margin: 0 auto;
-    position: relative;
+  margin: 0 auto;
+  position: relative;
 }
 
 .container_btn {
-    position: absolute;
-    z-index: 99;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    top: 14px;
-    padding: 0 20px;
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: 14px;
+  padding: 0 20px;
 }
 
 .container_btn button {
-    color: #DEE2E6;
-    background-color: unset;
-    border: 1px solid #DEE2E6;
-    padding: 8px;
-    height: 27px;
+  color: #dee2e6;
+  background-color: unset;
+  border: 1px solid #dee2e6;
+  padding: 8px;
+  height: 27px;
 }
 
 .container_btn .antd_btn {
-    font-size: 4px;
-    line-height: 0.75;
-    height: 14px;
-    padding: 2px 7.5px;
-    border-radius: 3px;
+  font-size: 4px;
+  line-height: 0.75;
+  height: 14px;
+  padding: 2px 7.5px;
+  border-radius: 3px;
 }
 
 .slick-slide .slick-list .slick-track {
-    display: flex;
-    gap: 20px;
-
+  display: flex;
+  gap: 20px;
 }
