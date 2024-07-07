@@ -1,8 +1,9 @@
-import  './styles.scss';
-
 import React,  {useRef} from 'react';
 import { Carousel, Button, Row} from 'antd';
 import 'antd/dist/reset.css';
+import { useMediaQuery } from 'react-responsive';
+
+import  './styles.scss';
 
 export default function DoubleCategories({img, title, text}) {
   const carouselRef = useRef();
@@ -15,8 +16,10 @@ export default function DoubleCategories({img, title, text}) {
     carouselRef.current.prev();
   };
 
+  const isMobile = useMediaQuery({ maxWidth: 600 });
+
     return (
-      <Row xl={12} xs={12} className="main_double_categories">
+      <Row xs={24} sm={12} className="main_double_categories">
         <div className='container_double_categories'>
             <div className='title_double_categories'>{title}</div>
             <div className="container_double_categories_btn">
@@ -29,7 +32,7 @@ export default function DoubleCategories({img, title, text}) {
        </Row> */}
         <Carousel
           ref={carouselRef}
-          slidesToShow={2}
+          slidesToShow={isMobile ? 1 : 2}
           slidesToScroll={1}
            dots={false}
           infinite={false}

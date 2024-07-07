@@ -1,5 +1,6 @@
 import React,  {useRef} from 'react';
 import { Carousel, Button } from 'antd';
+import { useMediaQuery } from 'react-responsive';
 
 import  './style.scss';
 import ItemHeader from "./item_main_header";
@@ -8,6 +9,7 @@ import { DATA_HOME_MAIN } from "../../constants/common";
 // import 'antd/dist/reset.css';
 export default function ItemMainHeader() {
   const carouselRef = useRef();
+  const isMobile = useMediaQuery({ maxWidth: 600 });
 
   const next = () => {
     carouselRef.current.next();
@@ -25,7 +27,7 @@ export default function ItemMainHeader() {
         </div>
         <Carousel
           ref={carouselRef}
-          slidesToShow={3}
+          slidesToShow={isMobile ? 1 : 3}
           slidesToScroll={1}
            dots={false}
           infinite={false}
