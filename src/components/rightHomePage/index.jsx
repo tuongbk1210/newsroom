@@ -72,16 +72,16 @@ export default function RightHomePage() {
       </Row>
       <Row className="follow_us">Tranding</Row>
       <Row className="item_right_page">
-        {DATA_LATEST.map((item, key) => {
-          return <ItemPopular img={item.img} text={item.text} key={item.id} type="right" />;
+        {DATA_LATEST.map((item) => {
+          return <ItemPopular img={item.img} text={item.text} index={item.id} type="right" />;
         })}
       </Row>
       <Row className="follow_us">Tags</Row>
       <Row className="container_tags">
         {DATA_TAGS.map((item, key) => {
           return (
-            <div className="item_tag" key={key}>
-              {item}
+            <div className="item_tag" key={item.id}>
+              {item.value}
             </div>
           );
         })}

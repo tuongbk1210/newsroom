@@ -42,8 +42,8 @@ export default function Footer() {
           <Row className="container_tags_footer">
             {DATA_TAGS.map((item, key) => {
               return (
-                <div className="item_tag" key={key}>
-                  {item}
+                <div className="item_tag" key={item.id}>
+                  {item.value}
                 </div>
               );
             })}
@@ -54,8 +54,8 @@ export default function Footer() {
           <Row className="container_tags_footer">
             {DATA_TAGS.map((item, key) => {
               return (
-                <div className="item_tag" key={key}>
-                  {item}
+                <div className="item_tag" key={item.id}>
+                  {item.value}
                 </div>
               );
             })}

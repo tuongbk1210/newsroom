@@ -43,7 +43,7 @@ function Category() {
           <Row>
             {DATA_HOME_MAIN.map((item, key) => {
               return (
-                <Row key={key} className="item_page_categories">
+                <Row key={item.id} className="item_page_categories">
                   <img src={item.img} alt="popular 1" width={'100%'} height={'200px'} />
                   <div className="container_popular_text">
                     <div>
@@ -61,7 +61,7 @@ function Category() {
           </Row>
           <Row className="container_pagination">
             {paginatedData.map((item, key) => {
-              return <ItemPopular img={item.img} text={text} key={key} />;
+              return <ItemPopular img={item.img} text={text} key={item.id} />;
             })}
             <Pagination
               current={current}
