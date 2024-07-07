@@ -27,7 +27,7 @@ function Category() {
           <Link className="link_current">Home</Link>&nbsp; /&nbsp; <Link className="link_current">Category</Link>&nbsp; /&nbsp; Technology
       </Row>
       <Row className="container-home" xs={24} lg={24}>
-        <Col xs={16} lg={16}>
+        <Col xs={24} sm={16}>
           <Row className="popular">
                 <div className="text_popular">Technology</div>
                 <Link>View All</Link>
@@ -63,7 +63,7 @@ function Category() {
       />
           </Row>
         </Col>
-        <Col xs={8} lg={8}>
+        <Col xs={24} sm={8}>
           <RightHomePage />
         </Col>
       </Row>
