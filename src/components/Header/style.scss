@@ -44,12 +44,17 @@ li {
       color: $color_2;
     }
     .dropdown-content {
-      display: block;
+      display: block !important;
     }
   }
 }
 li.dropdown {
   display: inline-block;
+}
+
+.dropdown button {
+  border: unset;
+  background-color: #fff;
 }
 .dropdown-content {
   display: none;
@@ -57,7 +62,7 @@ li.dropdown {
   background-color: $background-color_3;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 100;
   a {
     color: $color_1;
     padding: 12px 16px;

@@ -19,11 +19,6 @@ export default function Header() {
     setIsOpenMenu(!isOpenMenu);
   };
 
-  const handleClick = (e) => {
-    e.preventDefault();
-    // Add your click handling logic here
-  };
-
   return (
     <>
       <div className="container_header_mobile">
@@ -53,9 +48,9 @@ export default function Header() {
             <Link to="single-news">Single News</Link>
           </li>
           <li className="dropdown">
-            <a href="/" onClick={() => handleClick()} className="dropbtn">
-              Dropdown
-            </a>
+              <button className="dropbtn">Dropdown 
+                <i class="fa fa-caret-down"></i>
+              </button>
             <div className="dropdown-content">
               <Link to="/category" onClick={() => dispatch(setCategory('Business'))}>
                 Business
