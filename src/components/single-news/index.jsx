@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col, Button, Form, Input } from 'antd';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 import "./single-news.scss"
 import RightHomePage from "../rightHomePage";
@@ -13,17 +14,18 @@ import user_comment from "../../assets/images/user_comment.jpg";
 function SingleNews() {
 
   const { TextArea } = Input;
+  const category = useSelector((state) => state.category.value)
 
   return (
     <div class="home">
       <Row>
-          <Link className="link_current" to="page-home">Home</Link>&nbsp; /&nbsp; <Link className="link_current" to="category">Category</Link>&nbsp; /&nbsp; <Link className="link_current" to="category">Technology</Link>&nbsp;/&nbsp;News Title
+          <Link className="link_current" to="page-home">Home</Link>&nbsp; /&nbsp; <Link className="link_current" to="category">Category</Link>&nbsp; /&nbsp; <Link className="link_current" to="category">{category}</Link>&nbsp;/&nbsp;News Title
       </Row>
         <Row xl={24} xs={24}>
         <Col xs={24} sm={16} className="singnews">
         <img src={background_single_news} alt="background_single_news" width={"100%"} height={"440px"}/>
         <Row className="container_singnews"> 
-        <Row className="link_title_singnews"><Link style={{color: 'red'}}>Technology</Link>&nbsp;/ January 01,2045</Row>
+        <Row className="link_title_singnews"><Link style={{color: 'red'}}>{category}</Link>&nbsp;/ January 01,2045</Row>
           <Row>
             <Row className="text_sub_double_categories">Est set amet ipsum stet clita rebum duo</Row>
             <Row className="text_single_news_1">

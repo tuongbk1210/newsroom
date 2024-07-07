@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import { Row, Col, Pagination } from 'antd';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 import "./categories.scss"
 import RightHomePage from "../rightHomePage";
@@ -9,6 +10,7 @@ import ItemPopular from "../popular";
 
 function Category() {
 
+  const category = useSelector((state) => state.category.value)
   const [current, setCurrent ] = useState(1);
   const pageSize = 10;
   const handleChange = (page) => {
@@ -24,12 +26,12 @@ function Category() {
   return (
     <div class="home">
       <Row>
-          <Link className="link_current" to="page-home">Home</Link>&nbsp; /&nbsp; <Link className="link_current" to="category">Category</Link>&nbsp; /&nbsp; Technology
+          <Link className="link_current" to="page-home">Home</Link>&nbsp; /&nbsp; <Link className="link_current" to="category">Category</Link>&nbsp; /&nbsp; {category}
       </Row>
       <Row className="container-home" xs={24} lg={24}>
         <Col xs={24} sm={16}>
           <Row className="popular">
-                <div className="text_popular">Technology</div>
+                <div className="text_popular">{category}</div>
                 <Link to="category">View All</Link>
           </Row>
           <Row>
@@ -38,7 +40,7 @@ function Category() {
                 <Row key={key} className="item_page_categories">
                 <img src={item.img} alt="popular 1" width={"100%"} height={"200px"} />
                 <div className="container_popular_text">
-                  <div><span style={{color: "red"}}>Technology</span>/ January 01,2045</div>
+                  <div><span style={{color: "red"}}>{category}</span>/ January 01,2045</div>
                   <div className="text_popular_sub">Est set amet ipsum stet clita rebum duo</div>
                   <div>Rebum dolore duo et vẻo ipsum cilta, est ea sed duo diam ipsum, clita at justo, lorem amet
                     vero éo sed sit...

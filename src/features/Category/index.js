@@ -2,7 +2,7 @@ import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { decrease, increase } from './counterSlice';
+import { decrease, increase } from './categorySlice';
 import styles from './styles.module.css';
 
 const useStyles = makeStyles({

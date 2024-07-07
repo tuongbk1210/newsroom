@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { IoMenuOutline } from 'react-icons/io5';
 import { Button } from 'antd';
+import { useDispatch } from 'react-redux';
+import { setCategory } from '../../features/Category/categorySlice';
 
 import './style.scss';
 
@@ -9,6 +11,7 @@ export default function Header() {
   const location = useLocation();
   const current = location.pathname;
   const [isOpenMenu, setIsOpenMenu] = useState(false);
+  const dispatch = useDispatch();
 
   const handleOpenMenu = () => {
     setIsOpenMenu(!isOpenMenu);
@@ -16,7 +19,7 @@ export default function Header() {
 
   return (
     <>
-    <div className='container_header_mobile'>
+      <div className="container_header_mobile">
         <h1>
           <b>
             <span>NEWS</span>ROOM
@@ -25,13 +28,13 @@ export default function Header() {
         <Button className="btn_icon_menu" onClick={() => handleOpenMenu()}>
           <IoMenuOutline />
         </Button>
-    </div>
-        <h1 className='isNotMobile'>
-          <b>
-            <span>NEWS</span>ROOM
-          </b>
-        </h1>
-      <ul className={isOpenMenu ? 'show_items_menu' : "isNotMobile"}>
+      </div>
+      <h1 className="isNotMobile">
+        <b>
+          <span>NEWS</span>ROOM
+        </b>
+      </h1>
+      <ul className={isOpenMenu ? 'show_items_menu' : 'isNotMobile'}>
         <div className="item_menu_mobile">
           <li className={current === '/page-home' ? 'current_pathname' : ''}>
             <Link to="page-home">Home</Link>
@@ -47,16 +50,24 @@ export default function Header() {
               Dropdown
             </a>
             <div class="dropdown-content">
-              <Link to="/category">Business</Link>
-              <Link to="/category">Technology</Link>
-              <Link to="/category">Entertainment</Link>
-              <Link to="/category">Sport</Link>
+              <Link to="/category" onClick={() => dispatch(setCategory('Business'))}>
+                Business
+              </Link>
+              <Link to="/category" onClick={() => dispatch(setCategory('Technology'))}>
+                Technology
+              </Link>
+              <Link to="/category" onClick={() => dispatch(setCategory('Entertainment'))}>
+                Entertainment
+              </Link>
+              <Link to="/category" onClick={() => dispatch(setCategory('Sport'))}>
+                Sport
+              </Link>
             </div>
           </li>
-          <li className='contact'>
+          <li className="contact">
             <a href="#contact">Contact</a>
           </li>
-          <li className='isMobile'>
+          <li className="isMobile">
             <div class="search-container">
               <form action="/action_page.php">
                 <input type="text" placeholder="keyword" name="keyword" />
@@ -76,7 +87,6 @@ export default function Header() {
           </form>
         </div>
       </ul>
-     
     </>
   );
 }
