@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Row, Col, Carousel, Button } from 'antd';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import { Link } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 
 import Slideshow from '../../components/main_header/index';
@@ -69,7 +69,7 @@ function Home() {
           <Row>
             <Row className="container-categories">
               <div className="text-categories">Categories</div>
-              <Link>View All</Link>
+              <Link to="category">View All</Link>
             </Row>
           </Row>
           {DATA_CATEGORY.map((item, key) => {
@@ -84,7 +84,7 @@ function Home() {
       </Row>
       <Row xs={24} sm={24} className="container-featured">
         <div className="text-categories">Featured</div>
-        <Link>View All</Link>
+        <Link to="category">View All</Link>
       </Row>
       <FeauturedHome />
       <Row>
@@ -106,7 +106,7 @@ function Home() {
         <Col xs={24} sm={16} className="container_popular">
           <Row className="popular">
             <div className="text_popular">Popular</div>
-            <Link>View All</Link>
+            <Link to="category">View All</Link>
           </Row>
           <Row xs={24} sm={16} style={{ padding: '0px 10px' }}>
             <Row className="item_popular_left">
@@ -144,7 +144,7 @@ function Home() {
 
           <Row className="popular">
             <div className="text_popular">Latest</div>
-            <Link>View All</Link>
+            <Link to="category">View All</Link>
           </Row>
           <Row xs={16} xl={16} style={{ padding: '0px 10px' }}>
             <Row className="item_popular_left">

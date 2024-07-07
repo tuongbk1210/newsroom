@@ -17,7 +17,7 @@ function SingleNews() {
   return (
     <div class="home">
       <Row>
-          <Link className="link_current">Home</Link>&nbsp; /&nbsp; <Link className="link_current">Category</Link>&nbsp; /&nbsp; <Link className="link_current">Technology</Link>&nbsp;/&nbsp;News Title
+          <Link className="link_current" to="page-home">Home</Link>&nbsp; /&nbsp; <Link className="link_current" to="category">Category</Link>&nbsp; /&nbsp; <Link className="link_current" to="category">Technology</Link>&nbsp;/&nbsp;News Title
       </Row>
         <Row xl={24} xs={24}>
         <Col xs={24} sm={16} className="singnews">

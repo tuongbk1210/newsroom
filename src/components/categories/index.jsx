@@ -24,13 +24,13 @@ function Category() {
   return (
     <div class="home">
       <Row>
-          <Link className="link_current">Home</Link>&nbsp; /&nbsp; <Link className="link_current">Category</Link>&nbsp; /&nbsp; Technology
+          <Link className="link_current" to="page-home">Home</Link>&nbsp; /&nbsp; <Link className="link_current" to="category">Category</Link>&nbsp; /&nbsp; Technology
       </Row>
       <Row className="container-home" xs={24} lg={24}>
         <Col xs={24} sm={16}>
           <Row className="popular">
                 <div className="text_popular">Technology</div>
-                <Link>View All</Link>
+                <Link to="category">View All</Link>
           </Row>
           <Row>
             {DATA_HOME_MAIN.map((item, key) => {
